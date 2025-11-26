@@ -27,7 +27,7 @@ from PIL import Image
 import torchvision.models as models
 import torch.nn.functional as F
 from sklearn.model_selection import train_test_split
-from models.multiresnet import MultiResNetClassifier,CW_JDRL
+from multiresnet import MultiResNetClassifier,CW_JDRL
 from itertools import combinations
 from sklearn.metrics.pairwise import cosine_similarity
 from functools import reduce
@@ -463,3 +463,4 @@ final_results = {metric: f"{np.mean(values):.4f} ± {np.std(values):.4f}" for me
 print("\n最终五折交叉验证结果:")
 for key, value in final_results.items():
     print(f"{key}: {value}")
+
