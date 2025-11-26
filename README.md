@@ -1,0 +1,1 @@
+main_for_CW_JDRL contains the details of loading the dataset, training and testing, including the implementation of the GD module and the GCLD module. multiresnet contains the details of the model architecture.
